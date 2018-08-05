@@ -1,0 +1,695 @@
+/*---------- 产品图片 ----------*/
+
+#productImg {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+#productImg div.left {
+    width: 530px;
+}
+
+#productImg img.left {
+    width: 428px;
+    height: 428px;
+    border: 1px solid #e8e8e8;
+}
+
+#productImg .smallImg {
+    width: 78px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#productImg .smallImg img {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    /* 设置盒模型，让它的宽高是多少就是多少 */
+    box-sizing: border-box;
+}
+
+#productImg .smallImg img:hover,
+#productImg .smallImg img.active {
+    border: 2px solid #b4a078;
+}
+
+#productImg .info {
+    width: 510px;
+}
+
+#productImg .info h2 {
+    font: bold 20px/20px '微软雅黑';
+}
+
+#productImg .info p {
+    font: 12px/56px '微软雅黑';
+    color: #999;
+}
+
+#productImg .price {
+    background: #f5f3ef;
+    border: 1px dotted #dedede;
+    padding: 15px 0;
+    line-height: 28px;
+}
+
+#productImg .price span {
+    padding-left: 10px;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #666;
+}
+
+#productImg .price strong {
+    font: bold 22px/22px '微软雅黑';
+    color: #d7282d;
+}
+
+#productImg .price a.tag {
+    display: inline-block;
+    font: 12px/18px '微软雅黑';
+    color: #fff;
+    background: #d7282d;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+#productImg .price a.discount {
+    font-size: 12px;
+    color: #d7282d;
+    text-decoration: underline;
+}
+
+#productImg .price a.service {
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+}
+
+#productImg .price a.service:hover {
+    text-decoration: underline;
+}
+
+#productImg .price i {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    vertical-align: middle;
+    background: url(../images/ico_15.gif) no-repeat;
+    margin: 0 5px 0 15px;
+}
+
+#productImg .price i:nth-child(1) {
+    margin-left: 0;
+}
+
+#productImg .fomat dl,
+#productImg .number {
+    height: 32px;
+    line-height: 32px;
+    color: #666;
+    font-size: 12px;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+#productImg .fomat dt {
+    float: left;
+    margin-right: 30px;
+}
+
+#productImg .fomat dd {
+    height: 32px;
+    float: left;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#productImg .fomat dd.active {
+    border: 2px solid #b4a078;
+    background: url(../images/ico_16.gif) right bottom no-repeat;
+}
+
+#productImg .fomat dd.noclick {
+    cursor: not-allowed;
+    opacity: .5;
+    border: 1px dashed #e4e4e4;
+}
+
+#productImg .number * {
+    float: left;
+    font: 12px/28px "微软雅黑";
+}
+
+#productImg .number .nTitle {
+    margin-right: 30px;
+}
+
+#productImg .number div span {
+    width: 35px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#productImg .number div input {
+    width: 60px;
+    height: 28px;
+    border-color: #ddd;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* 这么长的选择器是为了提升优先级 */
+
+#productImg div.noClick {
+    opacity: 0.5;
+}
+
+#productImg div.noClick span,
+#productImg div.noClick input {
+    cursor: not-allowed;
+}
+
+#productImg .btn {
+    font-size: 0;
+}
+
+#productImg .btn a {
+    display: inline-block;
+    width: 168px;
+    line-height: 47px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#productImg .btn a.buy {
+    color: #b4a078;
+    border: 1px solid #b4a078;
+    background: #f5f3ef;
+    border-radius: 2px;
+}
+
+#productImg .btn a.buy:hover {
+    background: #fff;
+}
+
+#productImg .btn a.join {
+    color: #fff;
+    text-indent: 40px;
+    margin: 0 10px;
+    border: 1px solid #B4A078;
+    background: #B4A078 url(../images/join_bg.gif) no-repeat 25px 13px;
+}
+
+#productImg .btn a.join:hover {
+    opacity: 0.8;
+}
+
+#productImg .btn a.collection {
+    width: 50px;
+    height: 19px;
+    line-height: 14px;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #999;
+    border: 1px solid #ccc;
+    background: url(../images/collection_bg.gif) no-repeat center 6px;
+}
+
+
+/*---------- 大家都在看 ----------*/
+
+#look {
+    margin: 20px auto;
+}
+
+#look .center {
+    border: 1px solid #e8e8e8;
+}
+
+#look h3 {
+    font: bold 18px/44px '微软雅黑';
+    background: #f5f5f5;
+    text-indent: 20px;
+}
+
+#look .content {
+    position: relative;
+}
+
+#look .carouselImgCon {
+    position: relative;
+    height: 250px;
+    padding-bottom: 20px;
+    margin: 0 80px;
+    overflow: hidden;
+}
+
+#look ul {
+    width: 1920px;
+    position: absolute;
+    left: 0;
+}
+
+#look ul li {
+    width: 210px;
+    float: left;
+    text-align: center;
+    margin-right: 30px;
+}
+
+#look ul li img {
+    width: 210px;
+    height: 210px;
+}
+
+#look ul li a {
+    font: bold 12px/12px "微软雅黑";
+    display: block;
+}
+
+#look ul li span {
+    font: 12px/12px '微软雅黑';
+    color: #d4282d;
+    margin-top: 16px;
+}
+
+.prev,
+.next {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #d1c5af;
+    color: #fff;
+    line-height: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#look .prev:hover,
+#look .next:hover {
+    background: #b4a078;
+}
+
+
+/* 视频看到33 */
+
+#look .prev {
+    left: 20px;
+}
+
+#look .next {
+    right: 20px;
+}
+
+#look div.noClick {
+    background: #ddd;
+}
+
+#look div.noClick:hover {
+    background: #ddd;
+}
+
+
+/*---------- 详情评价专题推荐 ---------*/
+
+
+/* 详情里面的样式 */
+
+#bottom {
+    margin-bottom: 80px;
+}
+
+#bottom .product {
+    float: left;
+    width: 750px;
+}
+
+#bottom .title {
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #e8e8e8;
+    background: #f5f5f5;
+}
+
+#bottom .title a {
+    display: inline-block;
+    width: 169px;
+    text-align: center;
+    border-right: 1px solid #e8e8e8;
+}
+
+#bottom .title .active {
+    background: #fff;
+    line-height: 41px;
+    margin-top: -1px;
+    border-top: 3px solid #b4a078;
+}
+
+#bottom .title span {
+    color: #b4a078;
+}
+
+#bottom .content>div {
+    display: none;
+}
+
+#bottom table {
+    width: 100%;
+    margin: 30px auto;
+}
+
+#bottom td {
+    height: 40px;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+#bottom td:nth-of-type(odd) {
+    width: 135px;
+    text-indent: 30px;
+}
+
+#bottom td:nth-of-type(even) {
+    width: 240px;
+    color: #999;
+}
+
+#bottom .img p {
+    height: 200px;
+    background: #fff url(../images/original.png) no-repeat center;
+}
+
+#bottom .problem {
+    margin: 80px 0;
+}
+
+#bottom .problem h3 {
+    font-size: 18px;
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 52px;
+}
+
+#bottom .problem dl {
+    margin-top: 30px;
+}
+
+#bottom .problem dt {
+    margin-bottom: 10px;
+}
+
+#bottom .problem dd {
+    color: #999;
+}
+
+
+/* 评价里的样式 */
+
+#bottom .border {
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    padding: 14px 14px 0 14px;
+}
+
+#bottom .eTitle {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#bottom .eTitle div {
+    float: left;
+    padding: 15px 0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#bottom .eTitle i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url(../images/input_bg.png) no-repeat 0 -15px;
+}
+
+#bottom .eTitle span {
+    vertical-align: middle;
+}
+
+#bottom .eTitle .active i {
+    background: url(../images/input_bg.png) no-repeat 0 0;
+}
+
+#bottom .eTitle .active span {
+    color: #b4a078;
+}
+
+#bottom .evaluate li {
+    border-bottom: 1px dashed #e8e8e8;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+#bottom .evaluate li:last-child {
+    border: none;
+}
+
+#bottom .evaluate li li {
+    padding: 0;
+    border: none;
+    float: left
+}
+
+#bottom .avatar {
+    float: left;
+    width: 90px;
+    text-align: center;
+}
+
+#bottom .avatar img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 14px auto;
+}
+
+#bottom .vip1 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 6px;
+    background: url(../images/vip.gif) no-repeat 0 0;
+}
+
+#bottom .avatar span {
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+#bottom .text {
+    float: left;
+    width: 630px;
+    padding-top: 18px;
+}
+
+#bottom .text p {
+    line-height: 20px;
+}
+
+#bottom .smallImg {
+    margin: 15px 0;
+}
+
+#bottom .smallImg span {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#bottom .smallImg img {
+    width: 60px;
+    height: 60px;
+}
+
+#bottom .color {
+    font-size: 12px;
+    color: #9f9f9f;
+    line-height: 16px;
+}
+
+#bottom .dialog {
+    border: 1px solid #e8e8e8;
+    background: #f5f5f5;
+    margin: 10px 0 30px 0;
+    position: relative;
+    transition: .3s;
+    overflow: hiddle;
+    height: 0;
+    opacity: 0;
+    /*opacity: 0;*/
+    /*height: 510px;*/
+}
+
+#bottom .carouselImgCon {
+    position: relative;
+    width: 584px;
+    height: 438px;
+    margin: 50px auto 20px auto;
+    overflow: hidden;
+}
+
+#bottom .carouselImgCon ul {
+    position: absolute;
+    left: 0;
+    width: 2000px;
+}
+
+#bottom .carouselImgCon img {
+    width: 584px;
+    left: 438px;
+}
+
+#bottom .dialog .close {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: #ccc;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#bottom .dialog .close:hover {
+    color: #999;
+}
+
+#bottom .prev,
+#bottom .next {
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
+    line-height: 48px;
+    font-size: 20px;
+    background: #b0b0b0;
+}
+
+#bottom .prev {
+    left: 30px;
+}
+
+#bottom .next {
+    right: 30px;
+}
+
+#bottom .prev:hover,
+#bottom .next:hover {
+    background: #848484;
+}
+
+#bottom .page {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+#bottom .page span {
+    display: inline-block;
+    font-size: 12px;
+    padding: 7px 10px;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    cursor: pointer;
+}
+
+#bottom .page span:hover {
+    color: #b4a078;
+}
+
+#bottom .page span:first-child {
+    border-left: 1px solid #e6e6e6;
+}
+
+#bottom .page span.active {
+    background: #b4a078;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+}
+
+#bottom .page span.active:hover {
+    opacity: 0.9;
+}
+
+#bottom .page div {
+    display: inline-block;
+}
+
+
+/*---------- 专题推荐 ---------*/
+
+#bottom .special {
+    width: 298px;
+    border: 1px solid #e8e8e8;
+    float: right;
+}
+
+#bottom .special h3 {
+    font: bold 18px/41px '微软雅黑';
+    text-align: center;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#bottom .special div {
+    width: 260px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#bottom .special div:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+#bottom .special div a:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font: 14px/30px '微软雅黑';
+}
